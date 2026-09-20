@@ -14,8 +14,11 @@ def clean_text(text: str) -> str:
     text = re.sub(r'[^a-z]', ' ', text)
     return text.strip()
 
-# Step 2 - tokenize (not yet solved)
-# TODO: implement
+# Step 2 - tokenize
+def tokenize(text: str) -> list:
+    # TODO: Split cleaned text on whitespace into non-empty word tokens
+    txt = text.split()
+    return txt
 
 # Step 3 - tokenize_corpus (not yet solved)
 # TODO: implement
